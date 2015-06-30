@@ -1,0 +1,2 @@
+/usr/bin/ar cr libDate_lib.a  CMakeFiles/Date_lib.dir/Date.cpp.o
+/usr/bin/ranlib libDate_lib.a

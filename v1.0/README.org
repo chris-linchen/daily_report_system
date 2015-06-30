@@ -1,0 +1,4 @@
+* version 1 design target
+** using file daily.org to store the daily work log
+** class daily store every day's date, plan, summary.
+** class date introduce the date type.

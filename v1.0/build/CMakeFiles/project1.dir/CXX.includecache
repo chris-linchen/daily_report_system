@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chris/Code/C++/daily_report_system/v1.0/Date.h
+iostream
+-
+string
+-
+time.h
+-
+
+/home/chris/Code/C++/daily_report_system/v1.0/main.cpp
+iostream
+-
+Date.h
+/home/chris/Code/C++/daily_report_system/v1.0/Date.h
+
