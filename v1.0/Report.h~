@@ -1,0 +1,38 @@
+#ifndef _REPORT_H_
+#define _REPORT_H_
+
+#include"Date.h"
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Report{
+public:
+  Report();
+  Report(Date date);
+  ~Report(){};
+  string getPlan(){
+    return _plan;
+  }
+  void setPlan(string plan){
+    _plan += plan;
+  }
+  string getSummary(){
+    return _summary;
+  }
+  void setSummary(string summary){
+    _summary += summary;
+  }
+  Date getDate(){
+    return _date;
+  }
+  void setDate(Date date){
+    _date = date;
+  }
+  int saveToFile(string fileName);
+private:
+  string _plan;
+  string _summary;
+  Date _date;
+};
+#endif /* _REPORT_H_ */

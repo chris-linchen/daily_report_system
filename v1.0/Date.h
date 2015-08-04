@@ -56,9 +56,15 @@ public:
   void setWDay(int wday){
     _wday = wday;
   }
-  
+  Date nextDate();
+  Date& operator++();
+  Date& operator=(const Date &rhs);
+  //Date operator++(int dummy);
+  Date prevDate();
+  Date& operator--();
   string toString();
 private:
+  bool isPrime();
   int _year; // the year like 2015
   int _month; // the month [1-12]
   int _mday;// the day in the month [1-31]
